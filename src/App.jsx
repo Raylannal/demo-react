@@ -1,7 +1,7 @@
-/* eslint-disable import/no-anonymous-default-export */
 import "./App.css";
 import React from "react";
 
+import Familia from "./components/basicos/Familia";
 import Card from "./components/layout/Card";
 import Aleatorio from "./components/basicos/Aleatorio";
 import Primeiro from "./components/basicos/Primeiro";
@@ -11,6 +11,10 @@ export default (_) => (
   <div className="App">
     <h1>Fundamentos React</h1>
     <div className="Cards">
+      <Card titulo="Componente com Filhos" color="#00C8F8">
+        <Familia sobrenome = "Ferreira"></Familia>
+      </Card>
+
       <Card titulo="Exemplo de Card" color="#FA6900">
         <Aleatorio min={1} max={60}></Aleatorio>
       </Card>
