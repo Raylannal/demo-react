@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import TabelasProdutos from "./components/repeticoes/TabelasProdutos";
 import ListaAlunos from "./components/repeticoes/ListaAlunos";
@@ -17,6 +18,7 @@ export default (_) => (
     <div className="Cards">
       <Card titulo="Rederização Condicional" color="#982395">
         <ParOuImpar numero={21}></ParOuImpar>
+        <UsuarioInfo usuario={{ nome: "Fernando" }}></UsuarioInfo>
       </Card>
 
       <Card titulo="Desafio Repetições" color="#3A9AD9">
